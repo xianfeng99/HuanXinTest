@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/conversation_usericon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/conversation_msgcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="5"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/conversation_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/conversation_usericon"
+        android:text="username"/>
+
+
+    <TextView
+        android:id="@+id/conversation_last_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/conversation_usericon"
+        android:layout_below="@+id/conversation_username"
+        android:text="user's message"/>
+</RelativeLayout>

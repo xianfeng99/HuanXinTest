@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/send_edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input add username"/>
+    <EditText
+        android:id="@+id/send_edt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input your message"/>
+
+    <Button
+        android:id="@+id/send_btn_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Message"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/show_rcy_messages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/add_edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input add username"/>
+    <Button
+        android:id="@+id/add_btn_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+    <EditText
+        android:id="@+id/del_edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input delete username"/>
+
+    <Button
+        android:id="@+id/del_btn_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"/>
+    <Button
+        android:id="@+id/show_btn_userlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show UserList"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contact_rcv_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
